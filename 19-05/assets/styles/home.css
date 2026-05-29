@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: grid;
+    /* uma coluna é fixa e a outra ocupa o restante */
+    grid-template-columns: 250px 1fr;
+    /* a primeira e a terceira linha tem tamanho fixo, a do meio ocupa o tamanho restante */
+    grid-template-rows: 100px 1fr 100px;
+
+    /* aqui vamoes definir as areas que cada elemento vai ocupar */
+    grid-template-areas: 
+    "header header"
+    "sidebar main"
+    "footer footer"
+    ;
+}
+
+header {
+    grid-area: header;
+    background-color: blue;
+    color: white;
+}
+
+aside {
+    grid-area: sidebar;
+    background-color: rgb(78, 211, 255);
+    color: white;
+}
+
+main {
+    grid-area: main;
+    background-color: rgb(255, 78, 78);
+    color: white;
+}
+
+footer {
+    grid-area: footer;
+    background-color: rgb(78, 255, 78);
+    color: white;
+}

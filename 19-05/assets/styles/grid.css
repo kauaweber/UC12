@@ -1,0 +1,45 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container-pai{
+    background-color: red;
+    width: 100%;
+    height: 350px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+    
+}
+
+.container-pai-linhas{
+    height: 600px;
+    display: grid;
+    background-color: green;
+    grid-template-rows: repeat(5, 1fr);
+    gap: 20px;
+    margin-top: 50px;
+    
+
+}
+
+.container-filho{
+    background-color: blue;
+    
+}
+
+#Filho1 {
+    background-color: yellow;
+    grid-column: 1/3;
+}
+
+#Filho2 {
+    background-color: pink;
+}
+
+#Filho3 {
+    background-color: purple;
+    grid-column: 4/6;
+}

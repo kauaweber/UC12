@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora</title>
+
+  <link rel="shortcut icon" href="assets/images/calculadora.png" type="image/x-icon">
+
+  <link rel="stylesheet" href="assets/styles/calculadora.css">
+</head>
+<body>
+
+<div class="container-calc-historico">
+
+  <button onclick="trocarTema()">Trocar Tema</button>
+
+  <div class="calculadora">
+    <input type="text" id="visor" readonly />
+  
+    <button class="numero" onclick="clicou('1')">1</button>
+    <button class="numero" onclick="clicou('2')">2</button>
+    <button class="numero" onclick="clicou('3')">3</button>
+    <button class="operador" onclick="clicou('+')">+</button>
+  
+    <button class="numero" onclick="clicou('4')">4</button>
+    <button class="numero" onclick="clicou('5')">5</button>
+    <button class="numero" onclick="clicou('6')">6</button>
+    <button class="operador" onclick="clicou('-')">-</button>
+  
+    <button class="numero" onclick="clicou('7')">7</button>
+    <button class="numero" onclick="clicou('8')">8</button>
+    <button class="numero" onclick="clicou('9')">9</button>
+    <button class="operador" onclick="clicou('*')">*</button>
+  
+    <button class="apagar" onclick="apagarUltimo()">←</button>
+    <button class="numero" onclick="clicou('0')">0</button>
+    <button class="igual" onclick="resultado()">=</button>
+    <button class="operador" onclick="clicou('/')">/</button>
+    <button class="limpar" onclick="limpar()">C</button>
+    
+  </div>
+
+  <div id="historico"></div>
+
+</div>
+
+  <script src="assets/scripts/calculadora.js"></script>
+
+</body>
+</html>

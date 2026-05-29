@@ -1,0 +1,126 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: rgb(77, 77, 77);
+  margin: 0;
+  text-align: center;
+}
+
+.calculadora {
+  background-color: #f74646;
+  display: grid;
+  padding: 20px;
+  border-radius: 10px;
+  grid-template-columns: repeat(4, 50px);
+  grid-template-rows: repeat(6, 50px);
+  gap: 5px;
+  width: max-content;
+  margin: 0 auto;
+}
+
+#visor {
+  width: 100%;
+  height: 40px;
+  font-size: 20px;
+  grid-column: 1 / -1;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
+
+button {
+  width: 100%;
+  height: 100%;
+  font-size: 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+
+.numero {
+  background: #222;
+  color: #fff;
+}
+.operador {
+  background: #ff9800;
+  color: #fff;
+}
+.limpar {
+  background: #f44336;
+  color: #fff;
+  width: 215px
+}
+.igual {
+  background: #4caf50;
+  color: #fff;
+}
+
+button.apagar {
+  background: #90caf9;
+  color: #222;
+}
+
+
+button.numero:hover {
+  background: #444;
+}
+
+button.operador:hover {
+  background: #ffb74d;
+}
+
+button.limpar:hover {
+  background: #e57373;
+}
+
+button.igual:hover {
+  background: #81c784;
+}
+
+button.apagar:hover {
+  background: #42a5f5;
+  color: #fff;
+}
+
+div#historico {
+  background: #333;
+  color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  width: 300px;
+  min-height: 100px;
+  margin: 0; 
+}
+
+.container-calc-historico {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 30px; 
+  margin-top: 40px;
+}
+
+
+/* para trocar de cor do tema*/
+
+body.escuro {
+  background: #222;
+  color: #d1d1d1;
+}
+
+body.claro {
+  background: #cacaca;
+  color: #222;
+}
+
+body.escuro #historico {
+  background: #333;
+  color: #fff;
+}
+
+body.claro #historico {
+  background: #d8d8d8;
+  color: #222;
+}

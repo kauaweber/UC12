@@ -1,0 +1,42 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.relative {
+    padding: 10px;
+    background-color: red;
+    width: fit-content;
+    position: relative;
+    margin: 20px;
+}
+
+.absolute {
+    background-color: yellowgreen;
+    padding: 1px 5px;
+    position: absolute;
+    top: -10px;
+    right: -5px;
+    border-radius: 50%;
+}
+
+.whats {
+    width: 45px;
+    position: fixed;
+    right: 40px;
+    bottom: 20px;
+}
+
+.scroll {
+    height: 250px;
+    overflow-y: scroll;
+    border: 1px solid black;
+    padding: 0px 20px;
+}
+
+.scroll h1 {
+    background-color: yellow;
+    position: sticky;
+    top : 0;
+}

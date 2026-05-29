@@ -1,0 +1,32 @@
+.bloco {
+    display: block;
+    width: 150px;
+    height: 80px;
+    background: gray;
+    color: white;
+    margin: 5px;
+    text-align: center;
+    line-height: 80px;
+  }
+
+.linha {
+    display: inline;
+    width: 150px;    
+    height: 80px;    
+    background: gray;
+    color: white;
+    margin: 5px;
+    text-align: center;
+    line-height: 80px;
+  }
+
+.inline-block {
+    display: inline-block;
+    width: 150px;
+    height: 80px;
+    background: gray;
+    color: white;
+    margin: 5px;
+    text-align: center;
+    line-height: 80px;
+  }
