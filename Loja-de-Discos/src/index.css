@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Archivo+Black&family=Manrope:wght@400;600;700;800&display=swap");
+@import "tailwindcss";
+
+@theme {
+  /* Fundo */
+  --color-fundo-base: #EAE3D2;
+  --color-fundo-elevado: #DDD2B7;
+
+  /* Texto */
+  --color-texto-principal: #201D18;
+  --color-texto-secundario: #6B6354;
+
+  /* Destaques */
+  --color-amarelo-selo: #A67C2E;
+  --color-vermelho-selo: #8B3A2E;
+
+  /* Bordas */
+  --color-borda: #B7A98B;
+
+  --font-display: "Archivo Black", sans-serif;
+  --font-body: "Manrope", system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    margin: 0;
+    background: var(--color-fundo-base);
+    color: var(--color-texto-principal);
+    font-family: var(--font-body);
+
+    /* textura sutil de papel */
+    background-image:
+      radial-gradient(rgba(32, 29, 24, 0.03) 1px, transparent 1px);
+    background-size: 18px 18px;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+}
+
+@layer utilities {
+  .grade-fundo {
+    background-image:
+      radial-gradient(rgba(166, 124, 46, 0.08) 1px, transparent 1px);
+    background-size: 22px 22px;
+  }
+
+  /* Capas com tons retrô */
+
+  .capa-1 {
+    background: linear-gradient(140deg, #7b5c39, #3f3023);
+  }
+
+  .capa-2 {
+    background: linear-gradient(145deg, #b1873b, #5e4524);
+  }
+
+  .capa-3 {
+    background:
+      radial-gradient(circle at 35% 35%, #d8b46d, transparent 30%),
+      linear-gradient(140deg, #6d5838, #3f3023);
+  }
+
+  .capa-4 {
+    background: linear-gradient(135deg, #58674d, #3f3023);
+  }
+
+  .capa-5 {
+    background: linear-gradient(155deg, #b96b32, #5b4330);
+  }
+
+  .capa-6 {
+    background:
+      radial-gradient(circle at 60% 55%, #f6f2e8, transparent 25%),
+      linear-gradient(135deg, #6f7a63, #4b3a2b);
+  }
+}

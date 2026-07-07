@@ -1,0 +1,120 @@
+.container-pai {
+    background-color: black;
+
+    height: 500px;
+    /* torna o container um container flexivel */
+    display: flex;
+    /* indica em que direçao os filhos serao dispostos (linhas ou colunas) */
+    flex-direction: row;
+    /* indica como os filhos vao ser dispostos no eixo principal 
+        IMPORTANTE: em row(linha) o eixo ´rincipal é horizoltal. Em column(coluna) o eixo principal é vertical */
+    justify-content: center;
+     /* indica como os filhos vao ser dispostos no eixo secundario 
+        IMPORTANTE: em row(linha) o eixo secundario é vertical. Em column(coluna) o eixo secundario é horizontal */
+    align-items: center;
+    /* gap (vão) espaça os itens filhos */
+    gap: 20px;
+
+    /* controla se os itens vão quebrar em linhas diferentes (um) */
+    flex-wrap: wrap;
+}
+
+.container-filho {
+    background-color: red;
+    padding: 50px;
+
+}
+
+.start {
+    align-self: flex-start;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: black;
+    height: 100px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 30px;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+}
+
+header nav {
+   
+    display: flex;
+    gap: 20px;
+}
+
+header div {
+    
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.Container {
+    background-color: rgb(56, 56, 56);
+    height: 800px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;       
+}
+
+.filho {
+    background-color: whitesmoke;
+    height: 450px;
+    width: 350px; 
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+    padding: 16px;
+    gap: 20px;
+}
+
+.filho img {
+    width: 100%;
+    max-height: 180px;
+    border-radius: 6px;
+    object-fit: cover;
+}
+
+.filho h2 {
+    margin: 12px 6px ;
+    font-size: 20px;
+  }
+  
+.filho p {
+    margin: 0;
+    font-size: 16px;
+    color: #000000;
+    text-align: center;
+}
+
+.btn{
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    background-color: royalblue;
+    color: white;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: rgb(44, 77, 177);
+}

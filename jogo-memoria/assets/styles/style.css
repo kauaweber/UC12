@@ -1,0 +1,31 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #00ff4c;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  margin-top: 150px;
+}
+
+h1 {
+  color: #222222;
+  font-size: 36px;
+}
+
+.botao-jogar {
+  display: inline-block;
+  background-color: #333333;
+  color: white;
+  text-decoration: none;
+  padding: 12px 25px;
+  border-radius: 5px;
+  font-size: 18px;
+}
+
+.botao-jogar:hover {
+  background-color: #555555;
+}
+

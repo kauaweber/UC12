@@ -1,0 +1,11 @@
+span{
+    display: inline-block;
+    background-color: yellow;
+    width: 100px;
+}
+
+.span2{
+    display: inline-block;
+    background-color: cyan;
+    width: 100px;
+}

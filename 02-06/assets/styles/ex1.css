@@ -1,0 +1,27 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(128, 128, 128);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+button {
+    border: none;
+    padding: 10px 20px;
+    background-color: darkorange;
+    border-radius: 10px;
+}
+
+.destaque {
+    background: #ffe066;
+    box-shadow: 0 0 10px 2px #ffb300;
+    border-color: #ffb300;
+}
