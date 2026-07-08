@@ -1,0 +1,41 @@
+body{
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    margin: 10px;
+}
+
+h1{
+    color: #555;
+}
+
+p{
+    color: black;
+    margin-bottom: 30px;
+
+}
+
+.caixa{
+    width: 300px;
+    height: 150px;
+
+    background-color: lightblue;
+
+    padding: 40px;
+
+    border: 15px dashed;
+    
+    margin: 0px;
+
+}
+
+.caixa2{
+    width: 200px;
+    height: 180px;
+
+    background-color: pink;
+
+    padding: 30px;
+
+    border: 25px outset red;
+
+    margin: 20px;
+}

@@ -1,0 +1,99 @@
+
+/* =========================
+   base.css
+   ========================= */
+
+/* Tema claro */
+:root {
+  --color-bg: #ffffff;
+  --color-surface: #f5f5f5;
+  --color-text: #222222;
+  --color-muted: #666666;
+  --color-primary: #2563eb;
+  --color-border: #dddddd;
+
+  --font-body: "Inter", sans-serif;
+
+  /* Exercício 1.2 */
+
+--hero-bg: #1a1a2e;
+--hero-text: #ffffff;
+--hero-muted: #94a3b8;
+
+--hero-padding-y: 64px;
+--hero-padding-x: 16px;
+
+--hero-title-size: 48px;
+--hero-text-size: 18px;
+
+--hero-font: Georgia, serif;
+
+  /* Exercício 1.3 - Sistema de Espaçamento */
+  --spacing-xs: 0.25rem;
+  --spacing-sm: 0.50rem;
+  --spacing-md: 1rem;
+  --spacing-lg: 2rem;
+  --spacing-xl: 4rem;
+
+  --radius: 6px;
+
+  /* Exercício 1.5 - Paleta HSL */
+  --hue: 220;
+
+  --color-100: hsl(var(--hue), 70%, 90%);
+  --color-300: hsl(var(--hue), 70%, 70%);
+  --color-500: hsl(var(--hue), 70%, 50%);
+  --color-700: hsl(var(--hue), 70%, 30%);
+  --color-900: hsl(var(--hue), 70%, 15%);
+}
+
+/* Tema escuro */
+:root[data-theme="dark"] {
+  --color-bg: #111111;
+  --color-surface: #1c1c1c;
+  --color-text: #eeeeee;
+  --color-muted: #aaaaaa;
+  --color-primary: #60a5fa;
+  --color-border: #333333;
+}
+
+/* Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Documento */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-body);
+  background: var(--color-bg);
+  color: var(--color-text);
+  line-height: 1.6;
+}
+
+/* Elementos básicos */
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+code {
+  color: var(--color-primary);
+}
+
