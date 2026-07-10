@@ -16,6 +16,7 @@ function PainelVendas() {
   function fecharCaixa() {
     setCafesVendidos(0);
   }
+  
 
   return (
     <section
